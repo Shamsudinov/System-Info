@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <iostream>
+#include "ram.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,6 +18,7 @@ public:
     ~MainWindow();
 
 private:
+    RAM ram;
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
